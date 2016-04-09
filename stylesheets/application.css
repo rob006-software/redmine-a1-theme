@@ -1126,3 +1126,7 @@ div.wiki ul, div.wiki ol {
 	width: 100%;
 	min-width: 80px;
 }
+
+div.journal ul.details {
+	color: inherit;
+}
