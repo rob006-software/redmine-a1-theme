@@ -322,7 +322,7 @@ table.list td {padding: 5px;}
 table.list input[type="checkbox"] {margin-top: 6px;}
 
 table.list tbody tr:hover {background-color: #EFF5F8;}
-table.list tr.issue a { color: #666; }
+/*table.list tr.issue a { color: #666; }*/
 /*tr.odd {background-color: transparent;}
 tr.even {background-color: transparent;}
 table.list th {background-color: transparent;}*/
