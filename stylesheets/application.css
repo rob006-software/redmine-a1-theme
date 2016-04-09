@@ -266,7 +266,7 @@ div#welcome-store-content h4 {
 }
 
 
-a{
+a {
 	color: #005782;
 }
 
@@ -1129,4 +1129,16 @@ div.wiki ul, div.wiki ol {
 
 div.journal ul.details {
 	color: inherit;
+}
+
+a.assigned-to-me:before,
+tr.assigned-to-me .subject a:before {
+/*	put star before assigne to me tasks*/
+	content: "★";
+}
+
+a.private,
+tr.private .subject a {
+	border-left: 3px solid red;
+	padding-left: 3px;
 }
