@@ -266,7 +266,7 @@ div#welcome-store-content h4 {
 }
 
 
-a, a:link, a:visited {
+a{
 	color: #005782;
 }
 
@@ -367,15 +367,15 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 
 /* Fields */
 input[type="text"], input[type="password"], textarea, select { padding: 2px; border: 1px solid #d7d7d7; }
-input[type="text"], input[type="password"] { padding: 3px; height: 15px;}
+input[type="text"], input[type="password"] { padding: 3px; }
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus { border: 1px solid #888866; }
 option { border-bottom: 1px dotted #d7d7d7; }
 input.autocomplete {padding-left: 20px !important; border-radius: 0px}
 
 select#project_quick_jump_box {
-	border-radius: 12px;
-	-moz-border-radius: 12px;
-	-webkit-border-radius: 12px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
 	-webkit-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
@@ -390,7 +390,7 @@ select {
 	-o-appearance: none;
 	appearance: none;
 	z-index: 1;
-	padding: 4px 30px 4px 4px;
+	padding: 1px 30px 2px 4px;
 	background-color: #fff;
 	cursor: pointer;
 	background: url(../images/select.png) no-repeat right #fff;
@@ -402,7 +402,7 @@ select {
 	-ms-border-radius: 1px;
 	-o-border-radius: 1px;
 	border-radius: 1px;
-	height: 23px;
+	/*height: 23px;*/
    -webkit-box-sizing : border-box;‌​
     -moz-box-sizing : border-box;
     box-sizing : border-box;
@@ -481,9 +481,9 @@ div.message.reply {
 /* Misc */
 
 #quick-search #q {
-	border-radius: 12px;
-	-moz-border-radius: 12px;
-	-webkit-border-radius: 12px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
 	-webkit-box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
@@ -1114,4 +1114,10 @@ input.autocomplete {
 @media print {
    #sidebar { display: none; }
    div#content { width: 100%; }
+}
+
+/* My edits */
+div.wiki ul, div.wiki ol {
+	margin-bottom: 1em;
+	margin-top: 0px;
 }
