@@ -1121,3 +1121,8 @@ div.wiki ul, div.wiki ol {
 	margin-bottom: 1em;
 	margin-top: 0px;
 }
+
+#issue_tree table.progress {
+	width: 100%;
+	min-width: 80px;
+}
