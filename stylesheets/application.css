@@ -1140,7 +1140,9 @@ div.journal ul.details {
 }
 
 a.assigned-to-me:before,
-tr.assigned-to-me .subject a:before {
+tr.assigned-to-me .subject a:before,
+a.assigned-to-my-group:before,
+tr.assigned-to-my-group .subject a:before {
 /*	put star before assigne to me tasks*/
 	content: "★";
 }
