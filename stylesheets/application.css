@@ -402,7 +402,7 @@ select {
 	-o-appearance: none;
 	appearance: none;
 	z-index: 1;
-	padding: 1px 30px 2px 4px;
+	padding: 1px 20px 2px 4px;
 	background-color: #fff;
 	cursor: pointer;
 	background: url(../images/select.png) no-repeat right #fff;
