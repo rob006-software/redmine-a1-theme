@@ -278,6 +278,10 @@ div.details {
 	margin: -11px -11px 15px -11px;
 }
 
+.controller-repositories.action-revision .details p {
+	margin: 0;
+}
+
 div.issue.tooltip {
 	padding: 6px;
 	margin: 0 0 6px 0;
