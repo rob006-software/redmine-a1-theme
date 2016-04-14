@@ -1156,3 +1156,8 @@ tr.private .subject a {
 	border-left: 3px solid red;
 	padding-left: 3px;
 }
+
+/* fix sizes of some elements for mobiles*/
+img.gravatar {
+	box-sizing: content-box;
+}
