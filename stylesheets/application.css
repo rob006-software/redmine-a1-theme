@@ -36,8 +36,20 @@ body, #wrapper {
 	background: url(../images/bg-grain.png) repeat 0px 0px #F0F0F0;
 }
 
-#main { background: transparent; margin: 15px 15px 0px 15px; }
-#top-menu { background: #000; padding: 7px 10px 2px 20px;}
+#main {
+	background: transparent;
+	margin: 15px 15px 0px 15px;
+}
+@media all and (max-width: 899px) {
+	.theme-A1 #main {
+		margin-top: 0;
+		padding-top: 79px;
+	}
+}
+#top-menu {
+	background: #000;
+	padding: 7px 10px 2px 20px;
+}
 
 div.flash {
 	border: 0px solid;
@@ -175,9 +187,11 @@ p.breadcrumb {
 	margin: 4px 0 15px 0;
 }
 
-div#content > div.contextual {
-	margin-top: 16px;
-	margin-right: 10px;
+@media all and (min-width: 900px) {
+	div#content > div.contextual {
+		margin-top: 16px;
+		margin-right: 10px;
+	}
 }
 
 #roadmap {margin: 10px;}
@@ -207,6 +221,22 @@ div#content > div.wiki {
 	height: 40px;
 /*	overflow: hidden;*/
 	background: #E0E0E0 url(../images/bg.png) repeat-x;
+}
+
+@media all and (min-width: 900px) {
+	#main-menu {
+		overflow-x: auto;
+		height:auto;
+		min-height:40px;
+	}
+
+	#main-menu ul {
+		white-space: nowrap;
+	}
+	#main-menu li {
+		display: inline-block;
+		float:none;
+	}
 }
 
 #main-menu li a {
@@ -1160,4 +1190,28 @@ a.private,
 tr.private .subject a {
 	border-left: 3px solid red;
 	padding-left: 3px;
+}
+
+/* fix sizes of some elements for mobiles*/
+img.gravatar {
+	box-sizing: content-box;
+}
+@media all and (max-width: 899px) {
+	#issue_is_private_wrap {
+		float:none;
+	}
+	input#time_entry_comments {
+		width:100%;
+	}
+	input.autocomplete {
+		height:auto;
+	}
+	input#issue_subject, input#document_title {
+		width:100%;
+	}
+
+	.theme-A1 #content > .contextual a,
+	.theme-A1 p.buttons a {
+		border:none;
+	}
 }
