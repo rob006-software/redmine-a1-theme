@@ -36,8 +36,20 @@ body, #wrapper {
 	background: url(../images/bg-grain.png) repeat 0px 0px #F0F0F0;
 }
 
-#main { background: transparent; margin: 15px 15px 0px 15px; }
-#top-menu { background: #000; padding: 7px 10px 2px 20px;}
+#main {
+	background: transparent;
+	margin: 15px 15px 0px 15px;
+}
+@media all and (max-width: 899px) {
+	#main {
+		margin-top: 0;
+		padding-top: 79px;
+	}
+}
+#top-menu {
+	background: #000;
+	padding: 7px 10px 2px 20px;
+}
 
 div.flash {
 	border: 0px solid;
