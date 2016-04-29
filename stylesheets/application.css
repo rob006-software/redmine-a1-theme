@@ -1189,7 +1189,8 @@ img.gravatar {
 		width:100%;
 	}
 
-	.theme-A1 #content > .contextual a {
+	.theme-A1 #content > .contextual a,
+	.theme-A1 p.buttons a {
 		border:none;
 	}
 }
