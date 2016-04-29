@@ -187,9 +187,11 @@ p.breadcrumb {
 	margin: 4px 0 15px 0;
 }
 
-div#content > div.contextual {
-	margin-top: 16px;
-	margin-right: 10px;
+@media all and (min-width: 900px) {
+	div#content > div.contextual {
+		margin-top: 16px;
+		margin-right: 10px;
+	}
 }
 
 #roadmap {margin: 10px;}
@@ -1185,5 +1187,9 @@ img.gravatar {
 	}
 	input#issue_subject, input#document_title {
 		width:100%;
+	}
+
+	.theme-A1 #content > .contextual a {
+		border:none;
 	}
 }
