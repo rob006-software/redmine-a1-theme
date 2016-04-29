@@ -41,7 +41,7 @@ body, #wrapper {
 	margin: 15px 15px 0px 15px;
 }
 @media all and (max-width: 899px) {
-	#main {
+	.theme-A1 #main {
 		margin-top: 0;
 		padding-top: 79px;
 	}
