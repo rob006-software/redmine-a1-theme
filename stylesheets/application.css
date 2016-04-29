@@ -235,6 +235,7 @@ div#content > div.wiki {
 	}
 	#main-menu li {
 		display: inline-block;
+		float:none;
 	}
 }
 
