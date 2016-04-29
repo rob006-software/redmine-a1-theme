@@ -1173,3 +1173,17 @@ tr.private .subject a {
 img.gravatar {
 	box-sizing: content-box;
 }
+@media all and (max-width: 899px) {
+	#issue_is_private_wrap {
+		float:none;
+	}
+	input#time_entry_comments {
+		width:100%;
+	}
+	input.autocomplete {
+		height:auto;
+	}
+	input#issue_subject, input#document_title {
+		width:100%;
+	}
+}
