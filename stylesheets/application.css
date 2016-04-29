@@ -561,6 +561,7 @@ div.wiki pre, .wiki pre {
 code {
     background-color: #fafafa;
     border-radius: 3px;
+	border: 1px solid #e2e2e2;
     padding: 2px 4px;
 }
 .controller-wiki div#content > div.contextual {
