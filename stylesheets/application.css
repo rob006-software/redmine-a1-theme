@@ -564,6 +564,10 @@ code {
 	border: 1px solid #e2e2e2;
     padding: 2px 4px;
 }
+pre code,
+code code {
+	border: none;
+}
 .controller-wiki div#content > div.contextual {
 	margin-top: 3px;
 }
