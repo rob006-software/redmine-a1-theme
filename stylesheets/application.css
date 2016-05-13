@@ -567,6 +567,8 @@ code {
 pre code,
 code code {
 	border: none;
+	padding: 0;
+	background-color: transparent;
 }
 .controller-wiki div#content > div.contextual {
 	margin-top: 3px;
