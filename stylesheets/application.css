@@ -1222,3 +1222,11 @@ img.gravatar {
 		border:none;
 	}
 }
+
+/*
+ * Highlight note/change selected by URL anchor.
+ */
+#history .journal div[id^="note-"]:target,
+#history div[id^="change-"]:target {
+    background: #FFD;
+}
