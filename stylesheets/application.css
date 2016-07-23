@@ -223,22 +223,6 @@ div#content > div.wiki {
 	background: #E0E0E0 url(../images/bg.png) repeat-x;
 }
 
-@media all and (min-width: 900px) {
-	#main-menu {
-		overflow-x: auto;
-		height:auto;
-		min-height:40px;
-	}
-
-	#main-menu ul {
-		white-space: nowrap;
-	}
-	#main-menu li {
-		display: inline-block;
-		float:none;
-	}
-}
-
 #main-menu li a {
 	background-color: transparent !important;
 	display: block;
