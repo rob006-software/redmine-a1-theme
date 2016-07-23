@@ -223,7 +223,7 @@ div#content > div.wiki {
 	background: #E0E0E0 url(../images/bg.png) repeat-x;
 }
 #main-menu .tabs-buttons:first-child {
-	display:none;
+	display:none !important;
 }
 #main-menu .menu-children {
 	border-top: 1px solid #759FCF;
