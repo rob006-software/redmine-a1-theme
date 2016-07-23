@@ -222,7 +222,11 @@ div#content > div.wiki {
 /*	overflow: hidden;*/
 	background: #E0E0E0 url(../images/bg.png) repeat-x;
 }
-
+#main-menu .menu-children {
+	border-top: 1px solid #759FCF;
+	top: 28px;
+	padding: 5px;
+}
 #main-menu li a {
 	background-color: transparent !important;
 	display: block;
@@ -235,6 +239,11 @@ div#content > div.wiki {
 	border-radius: 6px;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
+}
+#main-menu .menu-children li a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
 }
 #main-menu .menu-children li a:hover {
     background-color: #759FCF !important;
