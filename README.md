@@ -1,2 +1,5 @@
 # redmine-a1-theme
-Fork of http://www.redminecrm.com/pages/a1-theme
+
+Fork of https://www.redmineup.com/pages/themes/a1
+
+Compatible with Redmine 3.3.
