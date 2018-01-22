@@ -1229,3 +1229,10 @@ img.gravatar {
 #history div[id^="change-"]:target {
     background: #FFD;
 }
+
+/*
+ * Fix oversized anonymous avatar for gantt.
+ */
+.gantt_subjects_container img.gravatar.icon-gravatar {
+	max-width: 16px;
+}

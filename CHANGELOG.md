@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+1.0.1 not released
+------------------
+
+- Fix oversized anonymous avatar for gantt.
+
+
 1.0.0 (2017-09-08)
 ------------------
 
