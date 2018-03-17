@@ -5,7 +5,10 @@ CHANGELOG
 1.0.2 not released
 ------------------
 
-No changes.
+- Improvements for task prefixes: 
+  - `★` for "assigned to me" tasks,
+  - `☆` for "assigned to my group" tasks,
+  - `✔` for "verified" tasks (custom class not available for vanilla Redmine).
 
 
 1.0.1 (2018-01-27)

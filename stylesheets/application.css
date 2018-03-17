@@ -1185,11 +1185,32 @@ div.journal ul.details {
 }
 
 a.assigned-to-me:before,
-tr.assigned-to-me .subject a:before,
+tr.assigned-to-me .subject a:before {
+/* put a star before assigned to me tasks */
+	content: "★";
+}
 a.assigned-to-my-group:before,
 tr.assigned-to-my-group .subject a:before {
-/*	put star before assigne to me tasks*/
-	content: "★";
+/* put a empty star before assigned to my group tasks */
+	content: "☆";
+}
+
+a.verified-1:before,
+tr.verified-1 .subject a:before {
+/* put tick before verified tasks */
+	content: "✔";
+}
+
+a.verified-1.assigned-to-me:before,
+tr.verified-1.assigned-to-me .subject a:before {
+/* variation for verified tasks assigned to me */
+	content: "✔★";
+}
+
+a.verified-1.assigned-to-my-group:before,
+tr.verified-1.assigned-to-my-group .subject a:before {
+/* variation for verified tasks assigned to my group */
+	content: "✔☆";
 }
 
 a.private,
