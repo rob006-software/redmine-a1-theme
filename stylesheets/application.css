@@ -1213,9 +1213,17 @@ tr.verified-1.assigned-to-my-group .subject a:before {
 	content: "✔☆";
 }
 
+/* red pipe for private issues */
 a.private,
 tr.private .subject a {
 	border-left: 3px solid red;
+	padding-left: 3px;
+}
+
+/* blue pipe for code reviews */
+a.tracker-6,
+tr.tracker-6 .subject a {
+	border-left: 3px solid blue;
 	padding-left: 3px;
 }
 

@@ -9,6 +9,7 @@ CHANGELOG
   - `★` for "assigned to me" tasks,
   - `☆` for "assigned to my group" tasks,
   - `✔` for "verified" tasks (custom class not available for vanilla Redmine).
+- Prefix code reviews by blue pipe (`tracker-6` used as tracker class).
 
 
 1.0.1 (2018-01-27)
