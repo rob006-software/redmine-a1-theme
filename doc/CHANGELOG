@@ -1,7 +1,21 @@
 == Redmine A1 theme
 
-Copyright (C) 2011-2014 Kirill Bezrukov
-http://www.redminecrm.com/
+Copyright (C) 2011-2017 Kirill Bezrukov
+http://www.redmineup.com/
+
+== 2017-08-25 v2.0.0
+
+* Redmine 3.4 fixes
+* New styles for checkbox and radio inputs
+* Multiple select2 styles
+* Margin fixes for inputs
+* Select2 styles for new CRM
+* Date field styles
+* Glyphs for moving arrows on the main menu
+* New object "+" button support
+* Tabs buttons styles
+* Gravatar fixes for Redmine 3.3
+* Responsive colors
 
 == 2014-09-24 v1.1.3
 
