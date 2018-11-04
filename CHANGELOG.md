@@ -2,7 +2,7 @@ CHANGELOG
 =========
 
 
-1.0.2 not released
+1.0.2 (2018-11-04)
 ------------------
 
 - Improvements for task prefixes: 
