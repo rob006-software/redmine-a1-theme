@@ -1,4 +1,4 @@
- if (window.jQuery) { 
+ if (window.jQuery) {
   $(window).load(function(){
     if (window.devicePixelRatio > 1) {
       var images = findImagesByRegexp('contacts_thumbnail', document);
@@ -19,7 +19,7 @@
         images[i].src = highres;
         images[i].height = old_size;
         images[i].width = old_size;
-      }  
+      }
 
       var images = findImagesByRegexp(/\/attachments\/thumbnail\/\d+$/, document)
 
@@ -33,10 +33,10 @@
           images[i].height = height;
           images[i].width = width;
         }
-      }  
+      }
 
 // Sized thumbnails
-      var images = findImagesByRegexp(/\/attachments\/thumbnail\/\d+\/\d+$/, document)  
+      var images = findImagesByRegexp(/\/attachments\/thumbnail\/\d+\/\d+$/, document)
       for(var i = 0; i < images.length; i++) {
         var lowres = images[i].src;
         var height = images[i].height
@@ -48,8 +48,8 @@
           images[i].src = highres;
           images[i].height = height;
           images[i].width = width;
-        }        
-      }             
+        }
+      }
 
 // People avatars
       var images = findImagesByRegexp(/people\/avatar.*size=\d+$/, document)
@@ -59,7 +59,7 @@
         old_size = lowres.match(/size=(\d+)$/)[1]
         var highres = lowres.replace(/size=(\d+)$/, "size=" + String(old_size*2));
         images[i].src = highres;
-      }    
+      }
 
 
     }
@@ -84,8 +84,8 @@
         var highres = lowres.replace(/size=(\d+)/, "size=" + String(old_size*2));
         images[i].src = highres;
         images[i].height = old_size;
-        images[i].width = old_size;      
-      }    
+        images[i].width = old_size;
+      }
     }
 
   });
