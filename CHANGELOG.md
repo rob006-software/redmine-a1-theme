@@ -2,10 +2,24 @@ CHANGELOG
 =========
 
 
-1.1.0 not released
+2.0.0 not released
 ------------------
 
-No changes.
+- Merge changes from 2.0.0 version of [original theme](https://www.redmineup.com/pages/themes/a1).
+  From [original changelog](https://www.redmineup.com/pages/themes/a1/updates):
+  - Supported Redmine versions: 3.4 - 1.0
+  - Redmine 3.4 fixes
+  - New styles for checkbox and radio inputs
+  - Multiple select2 styles
+  - Margin fixes for inputs
+  - Select2 styles for new CRM
+  - Date field styles
+  - Glyphs for moving arrows on the main menu
+  - New object "+" button support
+  - Tabs buttons styles
+  - Gravatar fixes for Redmine 3.3
+  - Responsive colors
+- Fix compatibility with Redmine 3.4.
 
 
 1.0.2 (2018-11-04)
