@@ -1405,7 +1405,8 @@ div.wiki ul, div.wiki ol {
 	margin-top: 0px;
 }
 
-#issue_tree table.progress {
+#issue_tree table.progress,
+#relations table.progress {
 	width: 100%;
 	min-width: 80px;
 }
