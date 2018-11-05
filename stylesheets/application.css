@@ -1509,3 +1509,18 @@ img.gravatar {
 	width: 100%;
 	box-sizing: border-box;
 }
+
+/*
+ * Make sure that icona are visible.
+ */
+a.icon {
+    min-height: 16px;
+    display: inline-block;
+}
+
+/*
+ * Fix contextual buttons in revision view.
+ */
+.controller-repositories.action-revision #content .contextual {
+    margin-top: 3px;
+}
