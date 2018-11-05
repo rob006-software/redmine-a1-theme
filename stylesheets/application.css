@@ -742,8 +742,8 @@ body.action-login #main.nosidebar #content {
 }
 
 #login-form table {
-	margin-right: auto ;
-	margin-left: auto ;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #login-form {
@@ -758,7 +758,7 @@ body.action-login #main.nosidebar #content {
 
 #login-form input#username, #login-form input#password {
 	outline: none;
-	margin: 0px;
+	/*margin: 0px;*/
 	border: 1px solid #DDD;
 	padding: 6px;
 	font-size: 140%;
@@ -913,7 +913,7 @@ div.filters .live_search {
 }
 
 input.live_search_field {
-	border-radius: 13px;
+	border-radius: 4px;
 	outline: none;
 	padding: 3px 12px !important;
 	border: 1px solid #C3C3C3;
@@ -1494,4 +1494,18 @@ img.gravatar {
  */
 .gantt_subjects_container img.gravatar.icon-gravatar {
 	max-width: 16px;
+}
+
+/*
+ * Fix width of inputs on login form and profile page.
+ */
+#user_login,
+#user_firstname,
+#user_lastname,
+#user_mail,
+#my_account_form select,
+#user_form select,
+#user_identity_url {
+	width: 100%;
+	box-sizing: border-box;
 }
