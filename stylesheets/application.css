@@ -940,149 +940,149 @@ table.contacts.index tbody tr.context-menu-selection:hover  {background-color: #
 /* 		TAGS
 /*******************/
 
-#edit_tags_form {
-	padding: 8px;
-}
+/*#edit_tags_form {*/
+	/*padding: 8px;*/
+/*}*/
 
-h2 span.tag-label-color {
-	letter-spacing: 0px;
-	top: -4px;
-	position: relative;
+/*h2 span.tag-label-color {*/
+	/*letter-spacing: 0px;*/
+	/*top: -4px;*/
+	/*position: relative;*/
 
-}
+/*}*/
 
-h2 span.tag-label-color a {
-	margin-bottom: -1px;
-}
-
-
-div.filters .live_search {
-	letter-spacing: 0px;
-}
-
-label#search_overlabel {
-	margin-top: -4px;
-}
+/*h2 span.tag-label-color a {*/
+	/*margin-bottom: -1px;*/
+/*}*/
 
 
-span.tag-label-color {
-	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-	font-size: 9px !important;
-	line-height: 1 !important;
-	margin: 2px 0px 2px 0px;
-	text-decoration: none;
-	display: inline-block;
-	position: relative;
-	text-align: center;
-	border-top: 1px solid rgba(255, 255, 255, 0.25);
-	-moz-border-radius: 14px !important;
-	-webkit-border-radius: 14px !important;
-	border-radius: 14px !important;
-	padding: 4px 6px 4px !important;
-	background: url(../images/dark-overlay.png) repeat-x scroll 0 0;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/;
-	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/;
-	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/;
-}
+/*div.filters .live_search {*/
+	/*letter-spacing: 0px;*/
+/*}*/
 
-span.tag-label-color {
-	background-color: #96CBFF;
-}
+/*label#search_overlabel {*/
+	/*margin-top: -4px;*/
+/*}*/
 
-span.tag-label-color:hover {
-	background-color: #77ADE2;
-}
 
-span.tag-label-color a, span.tag-label-color > span {
-	font-weight: bold !important;
-	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif !important;
-}
+/*span.tag-label-color {*/
+	/*text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);*/
+	/*font-size: 9px !important;*/
+	/*line-height: 1 !important;*/
+	/*margin: 2px 0px 2px 0px;*/
+	/*text-decoration: none;*/
+	/*display: inline-block;*/
+	/*position: relative;*/
+	/*text-align: center;*/
+	/*border-top: 1px solid rgba(255, 255, 255, 0.25);*/
+	/*-moz-border-radius: 14px !important;*/
+	/*-webkit-border-radius: 14px !important;*/
+	/*border-radius: 14px !important;*/
+	/*padding: 4px 6px 4px !important;*/
+	/*background: url(../images/dark-overlay.png) repeat-x scroll 0 0;*/
+	/*border: 1px solid rgba(0, 0, 0, 0.2);*/
+	/*-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) !*Top*!;*/
+	/*-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) !*Top*!;*/
+	/*box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) !*Top*!;*/
+/*}*/
 
-span.tag-label-color:hover a {
-	color: black;
-	text-shadow: none;
-}
+/*span.tag-label-color {*/
+	/*background-color: #96CBFF;*/
+/*}*/
+
+/*span.tag-label-color:hover {*/
+	/*background-color: #77ADE2;*/
+/*}*/
+
+/*span.tag-label-color a, span.tag-label-color > span {*/
+	/*font-weight: bold !important;*/
+	/*font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif !important;*/
+/*}*/
+
+/*span.tag-label-color:hover a {*/
+	/*color: black;*/
+	/*text-shadow: none;*/
+/*}*/
 
 /*Edit tags Tag-it*/
 
-.contacts-tags-edit ul.tagit {
-    margin: 0px !important;
-    padding: 0px !important;
-}
+/*.contacts-tags-edit ul.tagit {*/
+    /*margin: 0px !important;*/
+    /*padding: 0px !important;*/
+/*}*/
 
-.contacts-tags-edit ul.tagit li.tagit-choice  {
+/*.contacts-tags-edit ul.tagit li.tagit-choice  {*/
 
-	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-	font-size: 9px !important;
-	color: #6b7b91 !important;
-	line-height: 17px !important;
-	font-weight: bold !important;
+	/*text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);*/
+	/*font-size: 9px !important;*/
+	/*color: #6b7b91 !important;*/
+	/*line-height: 17px !important;*/
+	/*font-weight: bold !important;*/
 
-	/*border-top: 1px solid rgba(255, 255, 255, 0.25) !important;*/
-	-moz-border-radius: 14px !important;
-	-webkit-border-radius: 14px !important;
-	border-radius: 14px !important;
-	background: grey url(../images/dark-overlay.png) repeat-x scroll 0 0 !important;
-	border: 1px solid rgba(0, 0, 0, 0.2) !important;
-	-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/ !important;
-	-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/ !important;
-	box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/ !important;
-	padding-left: 8px !important;
-	padding-right: 18px !important;
+	/*!*border-top: 1px solid rgba(255, 255, 255, 0.25) !important;*!*/
+	/*-moz-border-radius: 14px !important;*/
+	/*-webkit-border-radius: 14px !important;*/
+	/*border-radius: 14px !important;*/
+	/*background: grey url(../images/dark-overlay.png) repeat-x scroll 0 0 !important;*/
+	/*border: 1px solid rgba(0, 0, 0, 0.2) !important;*/
+	/*-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) !*Top*! !important;*/
+	/*-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) !*Top*! !important;*/
+	/*box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) !*Top*! !important;*/
+	/*padding-left: 8px !important;*/
+	/*padding-right: 18px !important;*/
 
-	border: 1px solid #7995cc !important;
-	border-top: 1px solid #bccae6 !important;
-	border-left: 1px solid #a9bbdf !important;
+	/*border: 1px solid #7995cc !important;*/
+	/*border-top: 1px solid #bccae6 !important;*/
+	/*border-left: 1px solid #a9bbdf !important;*/
 
-	text-shadow: 0px 1px rgba(255,255,255,0.45) !important;
-	-webkit-border-radius: 15px 5px 5px 15px !important;
-	-moz-border-radius: 15px 5px 5px 15px !important;
-	-ms-border-radius: 15px 5px 5px 15px !important;
-	-o-border-radius: 15px 5px 5px 15px !important;
-	border-radius: 15px 5px 5px 15px !important;
-	-webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15),inset 0px 1px 0px 0px rgba(255,255,255,0.45) !important;
-	-moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15),inset 0px 1px 0px 0px rgba(255,255,255,0.45) !important;
-	-o-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15),inset 0px 1px 0px 0px rgba(255,255,255,0.45) !important;
-	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15),inset 0px 1px 0px 0px rgba(255,255,255,0.45) !important;
-	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ecf0f8), color-stop(100%, #dde4f2)) !important;
-	background-image: -webkit-linear-gradient(top, #ecf0f8, #dde4f2) !important;
-	background-image: -moz-linear-gradient(top, #ecf0f8, #dde4f2) !important;
-	background-image: -o-linear-gradient(top, #ecf0f8, #dde4f2) !important;
-	background-image: -ms-linear-gradient(top, #ecf0f8, #dde4f2) !important;
-	background-image: linear-gradient(top, #ecf0f8,#dde4f2) !important;
+	/*text-shadow: 0px 1px rgba(255,255,255,0.45) !important;*/
+	/*-webkit-border-radius: 15px 5px 5px 15px !important;*/
+	/*-moz-border-radius: 15px 5px 5px 15px !important;*/
+	/*-ms-border-radius: 15px 5px 5px 15px !important;*/
+	/*-o-border-radius: 15px 5px 5px 15px !important;*/
+	/*border-radius: 15px 5px 5px 15px !important;*/
+	/*-webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15),inset 0px 1px 0px 0px rgba(255,255,255,0.45) !important;*/
+	/*-moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15),inset 0px 1px 0px 0px rgba(255,255,255,0.45) !important;*/
+	/*-o-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15),inset 0px 1px 0px 0px rgba(255,255,255,0.45) !important;*/
+	/*box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.15),inset 0px 1px 0px 0px rgba(255,255,255,0.45) !important;*/
+	/*background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ecf0f8), color-stop(100%, #dde4f2)) !important;*/
+	/*background-image: -webkit-linear-gradient(top, #ecf0f8, #dde4f2) !important;*/
+	/*background-image: -moz-linear-gradient(top, #ecf0f8, #dde4f2) !important;*/
+	/*background-image: -o-linear-gradient(top, #ecf0f8, #dde4f2) !important;*/
+	/*background-image: -ms-linear-gradient(top, #ecf0f8, #dde4f2) !important;*/
+	/*background-image: linear-gradient(top, #ecf0f8,#dde4f2) !important;*/
 
-}
+/*}*/
 
-.contacts-tags-edit ul.tagit li.tagit-choice:hover  {
-	text-shadow: none;
-	background: lightgrey url(../images/dark-overlay.png) repeat-x scroll 0 0 !important;
-	color: black !important;
+/*.contacts-tags-edit ul.tagit li.tagit-choice:hover  {*/
+	/*text-shadow: none;*/
+	/*background: lightgrey url(../images/dark-overlay.png) repeat-x scroll 0 0 !important;*/
+	/*color: black !important;*/
 
-	border: 1px solid grey !important;
-	border-top: 1px solid silver !important;
-	border-left: 1px solid silver !important;
-}
+	/*border: 1px solid grey !important;*/
+	/*border-top: 1px solid silver !important;*/
+	/*border-left: 1px solid silver !important;*/
+/*}*/
 
-.contacts-tags-edit ul.tagit li.tagit-choice .tagit-close {
-	right: 4px !important;
+/*.contacts-tags-edit ul.tagit li.tagit-choice .tagit-close {*/
+	/*right: 4px !important;*/
 
-}
+/*}*/
 
-.contacts-tags-edit ul.tagit li.tagit-choice .tagit-close .text-icon {
-	color: #6b7b91 !important;
-}
+/*.contacts-tags-edit ul.tagit li.tagit-choice .tagit-close .text-icon {*/
+	/*color: #6b7b91 !important;*/
+/*}*/
 
-.contacts-tags-edit ul.tagit li.tagit-choice .tagit-close .text-icon:hover {
-	color: black !important;
-}
+/*.contacts-tags-edit ul.tagit li.tagit-choice .tagit-close .text-icon:hover {*/
+	/*color: black !important;*/
+/*}*/
 
-.box#edit_tags_form {
-	background-color: inherit !important;
-	border: none !important;
-	margin: 0px !important;
-	padding: 0px !important;
-}
+/*.box#edit_tags_form {*/
+	/*background-color: inherit !important;*/
+	/*border: none !important;*/
+	/*margin: 0px !important;*/
+	/*padding: 0px !important;*/
+/*}*/
 
 /*Contacts*/
 
