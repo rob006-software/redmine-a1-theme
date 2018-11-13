@@ -21,6 +21,7 @@ CHANGELOG
   - Responsive colors
 - Fix compatibility with Redmine 3.4.
 - Remove tags-related styles to not conflict with other tags plugins.
+- Hide too long SVN properties in repository view.
 
 
 1.0.2 (2018-11-04)
