@@ -2,7 +2,7 @@ CHANGELOG
 =========
 
 
-2.0.0 not released
+2.0.0 (2018-11-13)
 ------------------
 
 - Merge changes from 2.0.0 version of [original theme](https://www.redmineup.com/pages/themes/a1).
