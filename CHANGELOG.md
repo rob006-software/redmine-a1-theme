@@ -5,7 +5,7 @@ CHANGELOG
 2.0.1 not released
 ------------------
 
-No changes.
+- Hide too long SVN properties in changes list in repository view.
 
 
 2.0.0 (2018-11-13)
