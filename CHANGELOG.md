@@ -2,7 +2,7 @@ CHANGELOG
 =========
 
 
-2.0.1 not released
+2.0.1 (2019-04-28)
 ------------------
 
 - Hide too long SVN properties in changes list in repository view.
