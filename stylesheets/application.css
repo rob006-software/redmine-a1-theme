@@ -1542,3 +1542,14 @@ div.buttons {
 .theme-A1 div.attachments div.images > div {
 	margin-bottom: 0;
 }
+
+/*
+ * Remove left padding for avatar in note.
+ */
+div.journal h4 img.gravatar {
+	margin-left: 0;
+}
+
+body.avatars-on div.journal {
+	padding-left: 0;
+}
