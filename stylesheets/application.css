@@ -506,7 +506,7 @@ select {
 	-o-appearance: none;
 	appearance: none;
 	z-index: 1;
-	padding: 1px 20px 2px 4px;
+	padding: 5px 20px 5px 5px;
 	background-color: #fff;
 	cursor: pointer;
 	background: url(../images/select.png) no-repeat right #fff;
@@ -522,6 +522,7 @@ select {
    -webkit-box-sizing : border-box;‌​
     -moz-box-sizing : border-box;
     box-sizing : border-box;
+	min-width: 50px;
 }
 
 select::-ms-expand {
@@ -1577,4 +1578,50 @@ h4 {
 
 .jstBlock {
 	margin-bottom: 10px;
+}
+
+/*
+ * Adjust inputs sizes.
+ */
+
+/* Redmine tags */
+.theme-A1 ul.tagit {
+	padding: 5px;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+textarea.wiki-edit,
+input#issue_subject,
+input#document_title,
+input#content_comments,
+.jstBlock .jstTabs,
+.jstBlock .wiki-preview,
+.tabular.settings .wiki-preview,
+.tabular.settings .jstTabs,
+.tabular.settings textarea,
+.tabular.settings .wiki-preview,
+.tabular.settings .jstTabs
+{
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+	padding: 5px;
+}
+textarea,
+.jstBlock .wiki-preview {
+	padding: 10px;
+}
+.tabular label {
+	margin-top: 5px;
+}
+.tabular input[type="checkbox"] {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
