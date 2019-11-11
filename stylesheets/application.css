@@ -1544,3 +1544,37 @@ a.icon {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
+/*
+ * Remove unnecessary opacity from editor buttons.
+ */
+.tab-elements .jstElements button {
+    opacity: 1;
+
+}
+/*
+ * Remove duplicated border at the bottom of editor buttons.
+ */
+
+.tab-elements .jstElements {
+	padding-bottom: 1px;
+}
+.tab-elements .jstElements button {
+	border-bottom: none;
+}
+
+/*
+ * Restore bold on h4 (it was changed in Redmine 4.0).
+ */
+
+h4 {
+    font-weight: bold;
+}
+
+/*
+ * Add some space between editor and "private note" checkbox.
+ */
+
+.jstBlock {
+	margin-bottom: 10px;
+}
