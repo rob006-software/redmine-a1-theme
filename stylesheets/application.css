@@ -1300,8 +1300,7 @@ div.wiki ul, div.wiki ol {
 	margin-top: 0;
 }
 
-#issue_tree table.progress,
-#relations table.progress {
+.done_ratio table.progress {
 	width: 100%;
 	min-width: 80px;
 }
