@@ -1502,7 +1502,8 @@ input#content_comments,
 .tabular.settings .jstTabs,
 .tabular.settings textarea,
 .tabular.settings .wiki-preview,
-.tabular.settings .jstTabs {
+.tabular.settings .jstTabs,
+.custom_workflow_script {
 	width: 100%;
 	max-width: 100%;
 	box-sizing: border-box;
