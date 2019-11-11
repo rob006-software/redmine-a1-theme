@@ -1554,3 +1554,12 @@ div.journal h4 img.gravatar {
 body.avatars-on div.journal {
 	padding-left: 0;
 }
+
+/*
+ * Fix buttons in filters columns.
+ */
+.query-columns .buttons input[type="button"] {
+	line-height: 25px;
+	width: auto;
+	height: 25px;
+}
