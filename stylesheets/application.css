@@ -1385,7 +1385,9 @@ img.gravatar {
  * Highlight note/change selected by URL anchor.
  */
 #history .journal div[id^="note-"]:target,
-#history div[id^="change-"]:target {
+#history div[id^="change-"]:target,
+#history .journal div[id^="note-"]:target > h4,
+#history div[id^="change-"]:target > h4 {
 	background: #FFD;
 }
 
