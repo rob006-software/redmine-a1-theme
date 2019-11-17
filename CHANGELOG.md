@@ -2,10 +2,11 @@ CHANGELOG
 =========
 
 
-2.0.2 not released
+2.1.0 (2019-11-17)
 ------------------
 
-No changes.
+- Add compatibility with Redmine 4.0.
+- Normalize size and padding of inputs.
 
 
 2.0.1 (2019-04-28)
