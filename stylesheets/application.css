@@ -1523,6 +1523,11 @@ textarea,
 	line-height: 1.5em;
 }
 
+.tabular .wiki-preview p {
+	margin: 1em 0;
+	padding: 0 !important;
+}
+
 .theme-A1 .textoverlay {
 	line-height: 1.5em;
 }
