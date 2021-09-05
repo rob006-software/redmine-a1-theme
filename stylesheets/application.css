@@ -1,8 +1,7 @@
 /*noinspection CssUnknownTarget*/
 @import url(../../../stylesheets/application.css);
 
-/* A1 theme version 2.0.0 by Kirill Bezrukov www.redmineup.com */
-
+/* A1 theme version 3.0.0, Copyright (C) 2011 - 2020 Kirill Bezrukov www.redmineup.com */
 #header {
 	background: #394956;
 	padding: 0;
@@ -17,6 +16,7 @@
 	padding: 18px 10px 18px 70px;
 	margin: 0;
 }
+
 
 @media only screen and (min-device-pixel-ratio: 2) {
 	#header > h1 {
@@ -35,12 +35,18 @@ html, #wrapper {
 	background: #f3f3f3;
 }
 
-body {
+#wrapper3 {
+  display: flex;
+  flex-direction: column;
+}body {
 	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
 	/*font-size: 13px;*/
 }
 
 #main {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row-reverse;
 	background: transparent;
 	margin: 15px 15px 0 15px;
 }
@@ -80,8 +86,8 @@ div.filters h2 .scope_title a {
 }
 
 div#content {
-	margin-right: 300px;
-	width: auto;
+  flex-grow: 1;
+	margin-right: 20px;
 }
 
 div#main.nosidebar div#content {
@@ -89,11 +95,12 @@ div#main.nosidebar div#content {
 }
 
 #sidebar {
+  flex-shrink: 0;
 	width: 260px !important;
 	padding: 0 10px 20px 15px !important;
 	background: #f5f5f5;
 	border: 1px solid #e0e0e0;
-	box-shadow: 3px 3px rgba(0, 0, 0, 0.05)
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.05);
 }
 
 div#content > h2,
@@ -324,13 +331,13 @@ h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
 #main-menu .menu-children, #main-menu .menu-children li {
 	padding: 0 5px;
 }
-
-/* Tables */
-
+/**********************************************************/
+/* TABLES */
+/**********************************************************/
+table.list, .table-list {	border-collapse: collapse; border-radius: 0px;}
 table.list tbody td, table.list tbody tr:hover td {
 	border: solid 1px #d7d7d7;
 }
-
 table.list thead th {
 	border: 1px solid #d7d7d7;
 }
@@ -354,13 +361,9 @@ div#content .context-menu-selection {
 }
 
 /* Grid styles by priorities */
-table.list td {
-	padding: 5px;
-}
-
-table.list td.icon {
-	padding-left: 20px;
-}
+table.list td {padding: 5px;}
+table.list td.icon {padding-left: 20px;}
+table.list input[type="checkbox"] {margin: 6px 1px;}
 
 table.list input[type="checkbox"] {
 	margin-top: 6px;
@@ -520,7 +523,7 @@ input[type="submit"].button-small,
 input[type="button"].small,
 .details input[type="submit"],
 .ui-datepicker .ui-datepicker-buttonpane button,
-.query-columns td.buttons input[type="button"],
+.query-columns .buttons input[type="button"],
 input[type="submit"].small {
 	height: 20px;
 	padding: 0 12px;
@@ -530,30 +533,23 @@ input[type="submit"].small {
 	box-shadow: 0 3px 0 #a0a0a0;
 }
 
-/* Fields */
-input[type="text"], input[type="date"], input[type="password"], textarea, select {
-	padding: 2px;
-	border: 1px solid #d7d7d7;
+/**********************************************************/
+/* FORMS COMMON */
+/**********************************************************/
+input[type="text"], input[type="date"], input[type="password"], textarea, select { padding: 2px; border: 1px solid #d7d7d7; }
+input[type="text"]:not(.icon),
+input[type="date"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+fieldset#filters td.values input {
+  padding: 3px; min-height: 15px;border-radius: 0px;
 }
 
-input[type="text"], input[type="date"], input[type="password"] {
-	padding: 3px;
-	min-height: 15px;
-}
+input[type="checkbox"] {height: initial;}
 
-input[type="text"].icon {
-	padding-left: 20px;
-}
-
-option {
-	border-bottom: 1px dotted #d7d7d7;
-}
-
-input.autocomplete {
-	padding-left: 20px !important;
-	border-radius: 0;
-	height: initial;
-}
+option { border-bottom: 1px dotted #d7d7d7; }
+input.autocomplete {padding-left: 20px !important; border-radius: 0px;}
 
 select#project_quick_jump_box {
 	border-radius: 5px;
@@ -601,6 +597,15 @@ fieldset#filters td.values input:focus {
 	border-color: #4f9abd;
 	outline: none;
 }
+
+
+/**********************************************************/
+/* ISSUES */
+/**********************************************************/
+
+#history {border: 0px}
+
+#history .tab-content {border: 0px}
 
 /* Forum */
 
@@ -785,8 +790,9 @@ body.action-login #main.nosidebar #content {
 }
 
 #login-form table {
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0px auto;
+	border: 0px;
+  background-color: #FFF;
 }
 
 #login-form {
@@ -794,6 +800,7 @@ body.action-login #main.nosidebar #content {
 	box-shadow: 0 0 3px #CCC;
 	border: 1px solid #D7D7D7;
 	width: 500px;
+  margin: 40px auto;
 }
 
 #login-form input#username, #login-form input#password {
@@ -983,24 +990,6 @@ table.contacts.index tbody tr.context-menu-selection:hover {
 
 .small-card td.name h2 {
 	font-size: 16px;
-}
-
-body.controller-contacts #content,
-body.controller-notes #content,
-body.controller-contacts_tasks #content,
-body.controller-contacts_duplicates #content,
-body.controller-sale_funel #content,
-body.controller-deals #content {
-	margin-right: 340px;
-}
-
-body.controller-contacts #sidebar,
-body.controller-notes #sidebar,
-body.controller-contacts_tasks #sidebar,
-body.controller-contacts_duplicates #sidebar,
-body.controller-sale_funel #sidebar,
-body.controller-deals #sidebar {
-	width: 300px !important;
 }
 
 /*Invoices*/
@@ -1237,13 +1226,14 @@ input.autocomplete {
 
 .theme-A1 .select2-container--default .select2-selection--single .select2-selection__rendered {
 	padding-left: 24px;
-	line-height: 25px;
-	font-size: 12px;
+	line-height: 21px;
+	font-size: 11px;
 	outline: none;
 }
 
 .theme-A1 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
 	font-size: 12px;
+  padding-bottom: 2px;
 }
 
 .theme-A1 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1281,6 +1271,9 @@ input.autocomplete {
 	.theme-A1 #header {
 		top: 0;
 		background-color: #394956;
+	}
+	.theme-A1 #main {
+		margin: 0px;
 	}
 
 	div#content > div.contextual,
