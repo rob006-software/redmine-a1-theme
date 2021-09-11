@@ -2,6 +2,17 @@ CHANGELOG
 =========
 
 
+3.0.0 (2021-09-xx)
+------------------
+
+- Merge changes from 3.0.0 version of [original theme](https://www.redmineup.com/pages/themes/a1).
+  From [original changelog](https://www.redmineup.com/pages/themes/a1/updates):
+  - Supported Redmine versions: 4.1 - 1.0
+  - Redmine 4.1 support
+  - Flex layouts
+- Fix compatibility with Redmine 4.2.
+
+
 2.1.0 (2019-11-17)
 ------------------
 

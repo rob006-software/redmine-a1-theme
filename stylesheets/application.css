@@ -69,7 +69,7 @@ html, #wrapper {
 div#content > div.flash {
 	border: 0 solid;
 	padding: 9px 35px 10px;
-	margin: -5px -10px 1px -10px;
+	margin: -10px -10px 1px -10px;
 	background-position-x: 12px !important;
 	background-position-y: 9px !important;
 	position: relative;
@@ -86,8 +86,9 @@ div.filters h2 .scope_title a {
 }
 
 div#content {
-  flex-grow: 1;
+	flex-grow: 1;
 	margin-right: 20px;
+	padding: 10px;
 }
 
 div#main.nosidebar div#content {
@@ -113,10 +114,30 @@ div#content > .board.details > h2,
 div#content > #add-document > h2 {
 	background: #EAF2F5;
 	padding: 12px 20px;
-	margin: -6px -10px 10px;
+	margin: -10px -10px 10px;
 	letter-spacing: -1px;
 	color: #444;
 	font-size: 24px;
+}
+
+div#content > #flash_notice ~ .blue-header {
+	margin-top: -1px;
+}
+
+div#content > .blue-header {
+	background: #EAF2F5;
+	padding: 12px 20px;
+	margin: -10px -10px 10px;
+}
+
+div#content > .blue-header h2 {
+	letter-spacing: -1px;
+	color: #444;
+	font-size: 24px;
+	margin: 5px 10px 5px 0;
+}
+div#content > .blue-header .badge {
+	bottom: 4px;
 }
 
 .controller-boards.action-index #add-message {
@@ -141,6 +162,7 @@ div#content > p.breadcrumb ~ h2,
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	border-top: 1px solid #AECCD7;
+	border-bottom: 1px solid #AECCD7;
 	padding: 9px 20px 12px;
 	margin: -2px -10px 10px;
 }
@@ -164,11 +186,27 @@ p.breadcrumb {
 }
 
 @media all and (min-width: 900px) {
-	div#content > div.contextual,
-	.controller-timelog div#content .contextual,
-	.controller-time_entry_reports div#content .contextual {
+	div#content > div.contextual {
 		margin-top: 13px;
 		margin-right: 10px;
+	}
+
+	.controller-timelog div#content .contextual,
+	.controller-time_entry_reports div#content .contextual {
+		margin-top: 8px;
+		margin-right: 10px;
+	}
+
+	div#content > #flash_notice ~ div.contextual {
+		margin-top: 26px;
+	}
+
+	.controller-repositories div#content > div.contextual {
+		margin-top: 5px;
+	}
+	.controller-repositories.action-revision div#content > div.contextual,
+	.controller-repositories.action-revisions div#content > div.contextual {
+		margin-top: 0;
 	}
 }
 
@@ -227,7 +265,10 @@ div.details {
 	background: #FFD;
 	padding: 20px;
 	border: 1px solid #D7D7D7;
-	margin: -11px -11px 15px -11px;
+	border-left: 0;
+	border-right: 0;
+	margin: -10px -10px 15px -10px;
+	border-radius: 0;
 }
 
 .controller-repositories.action-revision .details p {
@@ -351,6 +392,10 @@ div#content .context-menu-selection {
 	margin: 20px 10px;
 }
 
+#quick-search #q {
+	height: 25px;
+}
+
 #quick-search select {
 	max-width: 300px;
 }
@@ -358,6 +403,21 @@ div#content .context-menu-selection {
 #quick-search .drdn-trigger {
 	padding-top: 4px;
 	font-size: 12px;
+	height: 25px;
+}
+
+@media (min-width: 900px) {
+	#project-jump.expanded .drdn-content {
+		top: 24px;
+		border-top-right-radius: 0;
+	}
+	#project-jump.expanded .drdn-trigger {
+		position: relative;
+		z-index: 100;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		border-bottom: 0;
+	}
 }
 
 /* Grid styles by priorities */
@@ -536,14 +596,24 @@ input[type="submit"].small {
 /**********************************************************/
 /* FORMS COMMON */
 /**********************************************************/
-input[type="text"], input[type="date"], input[type="password"], textarea, select { padding: 2px; border: 1px solid #d7d7d7; }
+input[type="text"],
+input[type="date"],
+input[type="password"],
+textarea,
+select {
+	border: 1px solid #d7d7d7;
+}
+
 input[type="text"]:not(.icon),
 input[type="date"],
 input[type="password"],
 input[type="search"],
 input[type="number"],
 fieldset#filters td.values input {
-  padding: 3px; min-height: 15px;border-radius: 0px;
+	padding: 5px;
+	min-height: 15px;
+	border-radius: 0;
+	height: auto;
 }
 
 input[type="checkbox"] {height: initial;}
@@ -565,7 +635,8 @@ select {
 	-o-appearance: none;
 	appearance: none;
 	z-index: 1;
-	padding: 5px 20px 5px 5px;
+	height: auto;
+	padding: 5px 20px 5px 2px;
 	cursor: pointer;
 	background: url(../images/select.png) no-repeat right #fff;
 	background-size: 18px 16px;
@@ -626,11 +697,13 @@ div.message.reply {
 	background: #EAF7FF;
 	padding: 0 15px 10px;
 	border: 1px solid silver;
-	margin: -11px -11px 15px -11px;
+	border-left: 0;
+	border-right: 0;
+	margin: -11px -10px 15px -10px;
 }
 
 .controller-messages.action-show .message .contextual {
-	margin-top: 10px;
+	margin-top: 2px;
 }
 
 .controller-boards p.breadcrumb,
@@ -792,7 +865,7 @@ body.action-login #main.nosidebar #content {
 #login-form table {
 	margin: 0px auto;
 	border: 0px;
-  background-color: #FFF;
+	background-color: #FFF;
 }
 
 #login-form {
@@ -800,21 +873,24 @@ body.action-login #main.nosidebar #content {
 	box-shadow: 0 0 3px #CCC;
 	border: 1px solid #D7D7D7;
 	width: 500px;
-  margin: 40px auto;
+	margin: 40px auto;
 }
 
 #login-form input#username, #login-form input#password {
 	outline: none;
+	height: auto;
 	/*margin: 0px;*/
 	border: 1px solid #DDD;
 	padding: 6px;
-	font-size: 140%;
+	/*font-size: 140%;*/
 	border-radius: 2px;
 }
 
+/*
 #login-form input#login-submit {
 	padding: 1px;
 }
+*/
 
 .controller-account.action-login div.flash, div.wiki div.flash {
 	box-shadow: 0 0 3px #CCC;
@@ -859,7 +935,7 @@ body.action-login #main.nosidebar #content {
 
 #main-menu button.tab-left, #main-menu button.tab-right {
 	cursor: pointer;
-	height: 100%;
+	height: 42px;
 	border: 0;
 	position: absolute;
 	padding: 4px;
@@ -867,7 +943,7 @@ body.action-login #main.nosidebar #content {
 	bottom: 0;
 	border-radius: 0;
 	background: #d6d6d6;
-	color: #9da2a6;
+	color: #777;
 	font-weight: bold;
 }
 
@@ -898,7 +974,7 @@ body.action-login #main.nosidebar #content {
 #main-menu button.tab-left.disabled, #main-menu button.tab-right.disabled {
 	background-color: #d6d6d6;
 	cursor: unset;
-	color: #777;
+	color: #9da2a6;
 }
 
 div.tabs-buttons {
@@ -1016,13 +1092,14 @@ span.invoice-status.paid {
 
 /*.controller-documents.action-index div#content  h2, */
 .controller-projects.action-index div#content > h2 {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	border-top: 1px solid #AECCD7;
-	padding: 9px 20px 12px;
-	margin: -2px -10px 10px;
+	/*border-top-left-radius: 0;*/
+	/*border-top-right-radius: 0;*/
+	/*border-top: 1px solid #AECCD7;*/
+	padding: 12px 20px;
+	margin: -10px -10px 10px;
 }
 
+/*
 .controller-projects.action-index div#content > h2:first-of-type {
 	border-top: 1px solid white;
 	border-bottom: 1px solid #AECCD7;
@@ -1034,6 +1111,7 @@ span.invoice-status.paid {
 	padding: 12px 20px;
 	margin: -6px -10px 10px;
 }
+*/
 
 /***************************************************/
 /* 		Color picker
@@ -1264,7 +1342,9 @@ input.autocomplete {
 /*RESPONSIVE*/
 /*******************************************/
 @media screen and (max-width: 899px) {
-	.theme-A1 #content > .contextual a, p.buttons a {
+	.theme-A1 #content > .contextual a,
+	.theme-A1 #content > .contextual .drdn,
+	p.buttons a {
 		background-color: #fff;
 	}
 
@@ -1368,7 +1448,7 @@ img.gravatar {
 		width: 100%;
 	}
 
-	.theme-A1 #content > .contextual a,
+	/*.theme-A1 #content > .contextual a,*/
 	.theme-A1 p.buttons a {
 		border: none;
 	}
@@ -1443,7 +1523,7 @@ a.icon {
  */
 .tab-elements .jstElements button {
 	opacity: 1;
-
+	border-radius: 0;
 }
 
 /*
@@ -1503,12 +1583,14 @@ input#message_subject:last-child,
 	max-width: 100%;
 	box-sizing: border-box;
 }
+/*
 
 input[type="text"],
 input[type="date"],
 input[type="password"] {
 	padding: 5px 10px;
 }
+*/
 
 textarea,
 .jstBlock .wiki-preview {
@@ -1521,6 +1603,10 @@ textarea,
 	padding: 0 !important;
 }
 
+.tabular p {
+	margin-top: 5px;
+}
+
 .theme-A1 .textoverlay {
 	line-height: 1.5em;
 }
@@ -1531,7 +1617,7 @@ input.autocomplete {
 }
 
 .tabular label {
-	margin-top: 5px;
+	margin-top: 2px;
 }
 
 .tabular input[type="checkbox"] {
