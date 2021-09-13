@@ -1471,7 +1471,7 @@ img.gravatar {
 	background: #FFD;
 }
 
-#history .journal div[id^="note-"] {
+#history div[id^="change-"].journal {
 	padding: 15px;
 	margin-top: 0;
 	margin-left: -15px;
