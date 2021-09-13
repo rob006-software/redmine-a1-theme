@@ -836,7 +836,7 @@ table.progress td.done {
 }
 
 #history div.journal {
-	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
 }
 
 /* Modal form*/
@@ -904,8 +904,13 @@ body.action-login #main.nosidebar #content {
 
 /*Tabs*/
 
+#content .tabs {
+	margin-left: -10px;
+	margin-right: -10px;
+}
 #content .tabs ul {
-	border-color: #e5e5e5
+	border-color: #e5e5e5;
+	padding-left: 20px;
 }
 
 #content .tabs ul li a {
