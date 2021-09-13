@@ -687,10 +687,14 @@ div.message.reply {
 
 .controller-messages.action-show .message.reply {
 	background: white;
-	padding: 10px 0 0 0;
+	padding: 15px;
 	border: none;
-	margin: 0 0 20px 0;
+	margin: 0 -10px;
 	border-top: 1px solid #DDD;
+}
+
+body.avatars-on #replies .message.reply {
+	padding-left: 42px;
 }
 
 .controller-messages.action-show .message {
@@ -1457,11 +1461,21 @@ img.gravatar {
 /*
  * Highlight note/change selected by URL anchor.
  */
+#history div:target h4.note-header,
+#replies .reply:target h4.reply-header,
+#replies div[id^="message-"]:target,
 #history .journal div[id^="note-"]:target,
 #history div[id^="change-"]:target,
 #history .journal div[id^="note-"]:target > h4,
 #history div[id^="change-"]:target > h4 {
 	background: #FFD;
+}
+
+#history .journal div[id^="note-"] {
+	padding: 15px;
+	margin-top: 0;
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
 /*
