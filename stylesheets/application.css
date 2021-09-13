@@ -1661,3 +1661,19 @@ body.avatars-on div.journal {
 	width: auto;
 	height: 25px;
 }
+
+/*
+ * Reduce text width to 800px to improve readability.
+ */
+
+.wiki p,
+.wiki ol,
+.wiki ul {
+	max-width: 800px;
+}
+
+textarea.wiki-edit {
+	resize: both;
+	max-width: 100%;
+	min-width: min(800px, 100%);
+}
