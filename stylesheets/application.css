@@ -753,6 +753,20 @@ img.gravatar {
 	border: 1px solid #d3d3d3;
 }
 
+.gantt_subjects_container img.gravatar.icon-gravatar {
+	margin-top: 0;
+	border: 0;
+}
+
+#users_for_watcher img.gravatar,
+#watchers img.gravatar {
+	border: 0;
+}
+
+div.gravatar-with-child > img.gravatar:nth-child(2) {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
 .wiki img {
 	max-width: 100%;
 }
@@ -1481,13 +1495,6 @@ img.gravatar {
 	margin-top: 0;
 	margin-left: -15px;
 	margin-right: -15px;
-}
-
-/*
- * Fix oversized anonymous avatar for gantt.
- */
-.gantt_subjects_container img.gravatar.icon-gravatar {
-	max-width: 16px;
 }
 
 /*
