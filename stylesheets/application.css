@@ -759,8 +759,10 @@ img.gravatar {
 }
 
 #users_for_watcher img.gravatar,
+div#roadmap .related-issues td.assigned_to img.gravatar,
 #watchers img.gravatar {
 	border: 0;
+	box-shadow: none;
 }
 
 div.gravatar-with-child > img.gravatar:nth-child(2) {
