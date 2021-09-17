@@ -680,6 +680,10 @@ fieldset#filters td.values input:focus {
 
 /* Forum */
 
+#replies {
+	margin-bottom: 15px;
+}
+
 div.message.reply {
 	border-top: 1px solid #DDD;
 	padding-top: 10px;
@@ -691,6 +695,10 @@ div.message.reply {
 	border: none;
 	margin: 0 -10px;
 	border-top: 1px solid #DDD;
+}
+
+.controller-messages.action-show .message.reply:last-child {
+	border-bottom: 1px solid #DDD;
 }
 
 body.avatars-on #replies .message.reply {
@@ -1493,10 +1501,20 @@ img.gravatar {
 }
 
 #history div[id^="change-"].journal {
+	margin-left: -16px;
+	margin-right: -16px;
+}
+
+#history div[id^="note-"] {
 	padding: 15px;
 	margin-top: 0;
-	margin-left: -15px;
-	margin-right: -15px;
+}
+
+#history div[id^="changeset-"] {
+	margin-left: -16px;
+	margin-right: -16px;
+	padding: 15px;
+	margin-top: 0;
 }
 
 /*
