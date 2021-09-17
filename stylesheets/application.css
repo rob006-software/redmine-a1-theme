@@ -1240,7 +1240,8 @@ table.ui-datepicker-calendar td.ui-datepicker-week-col {
 /***************************************************/
 .ui-widget-header .ui-icon {
 	/*noinspection CssUnknownTarget*/
-	background-image: url(../../../stylesheets/jquery/images/ui-icons_222222_256x240.png);
+	/* 222222 sprite is no longer available */
+	/*background-image: url(../../../stylesheets/jquery/images/ui-icons_222222_256x240.png);*/
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
