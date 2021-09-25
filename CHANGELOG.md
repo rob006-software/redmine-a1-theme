@@ -2,7 +2,7 @@ CHANGELOG
 =========
 
 
-3.0.0 (2021-09-xx)
+3.0.0 (2021-09-25)
 ------------------
 
 - Merge changes from 3.0.0 version of [original theme](https://www.redmineup.com/pages/themes/a1).
@@ -11,6 +11,8 @@ CHANGELOG
   - Redmine 4.1 support
   - Flex layouts
 - Fix compatibility with Redmine 4.2.
+- Improvements for highlighting notes targeted by URL's fragment.
+- Limit max width of paragraphs to improve readability.
 
 
 2.1.0 (2019-11-17)
