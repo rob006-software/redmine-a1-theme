@@ -197,8 +197,12 @@ p.breadcrumb {
 		margin-right: 10px;
 	}
 
-	div#content > #flash_notice ~ div.contextual {
+	.controller-issues.action-show div#content > #flash_notice ~ div.contextual {
 		margin-top: 26px;
+	}
+
+	div#content > #flash_notice ~ h2 {
+		margin-top: -1px;
 	}
 
 	.controller-repositories div#content > div.contextual {
