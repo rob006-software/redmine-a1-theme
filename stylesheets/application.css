@@ -1563,6 +1563,7 @@ a.icon {
  * Hide too long SVN properties in repository view.
  */
 .controller-repositories.action-show #content ul.properties li:not(:active),
+.controller-repositories.action-entry #content ul.properties li:not(:active),
 .controller-repositories.action-changes #content ul.properties li:not(:active) {
 	white-space: nowrap;
 	overflow: hidden;
