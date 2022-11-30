@@ -640,7 +640,7 @@ select {
 	appearance: none;
 	z-index: 1;
 	height: auto;
-	padding: 5px 20px 5px 2px;
+	padding: 5px 20px 5px 5px;
 	cursor: pointer;
 	background: url(../images/select.png) no-repeat right #fff;
 	background-size: 18px 16px;
